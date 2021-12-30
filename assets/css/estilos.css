@@ -99,16 +99,26 @@ body {
 
 .principal {
     padding: 24px 16px;
+    display: grid;
+    gap: 16px;
 }
 .titulo-pagina {
     font-size: 1.5rem;
     font-weight: 700;
+}
+.titulo-secao {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-top: 24px;
 }
 .cartao {
     width: 100%;
     border-radius: 15px;
     overflow: hidden;
     background-color: #2C343A;
+}
+.carta--destaque {
+    margin-bottom: 16px;
 }
 .cartao__conteudo {
     padding: 16px;
@@ -152,11 +162,16 @@ body {
     height: 40px;
     border-radius: 10px;
     font-size: 0.9rem;
+    justify-self: flex-end;
 
 }
 .cartao__botao--play::before {
     content: "\e90b";
     font-size: 24px;
+}
+.cartao__botao--comprar::before {
+    content: "\e901";
+    font-size: 20px;
 }
 .cartao__botao--destaque {
     width: 100%;
@@ -164,4 +179,8 @@ body {
 }
 .cartao__botao--destaque::before {
     margin-right: 8px;
+}
+.secao {
+    display: grid;
+    gap: 16px;
 }
